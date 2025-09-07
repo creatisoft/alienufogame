@@ -4,6 +4,12 @@ A small, fun practice game built with MonoGame and .NET — a tiny project for l
 
 This repository contains the source for `alienufo-game`, a simple playable demo intended for practice and enjoyment.
 
+
+
+https://github.com/user-attachments/assets/0d8297c4-8939-4724-afa3-be9bc66eb3c8
+
+
+
 ## Features
 
 - Classic 2D sprite-based gameplay
