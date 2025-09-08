@@ -4,9 +4,9 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>/Users/christopher/Documents/GameProjects/alienufo-game/Content/alien_sprite.png</File>
-    <File>/Users/christopher/Documents/GameProjects/alienufo-game/Content/bush_sprite.png</File>
-    <File>/Users/christopher/Documents/GameProjects/alienufo-game/Content/ufo_sprite.png</File>
+    <File>/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/Content/alien_sprite.png</File>
+    <File>/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/Content/bush_sprite.png</File>
+    <File>/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/Content/ufo_sprite.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

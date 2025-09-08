@@ -16,7 +16,9 @@ public class Game1 : Game
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
 
-    
+    //bush sprite test
+    DrawSprite dSprite;
+
     Texture2D alienSprite;
     Texture2D ufoSprite;
     Vector2 alienPosition;
@@ -36,16 +38,22 @@ public class Game1 : Game
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
 
+        //add title, and turn off resizing. 
+        Window.Title = "Alien UFO Game by Christopher M.";
+        Window.AllowUserResizing = false;
+        
     }
 
     protected override void Initialize()
     {
 
         // TODO: Add your initialization logic here
+
+        //create new dsprite object
         
         alienPosition = Vector2.Zero;
         ufoPosition = new Vector2(400, 250);
-
+        dSprite = new DrawSprite();
         base.Initialize();
     }
 
@@ -61,6 +69,10 @@ public class Game1 : Game
 
         gameText = Content.Load<SpriteFont>("myfont");
 
+        //draw the dsprite
+        //use content in the parameters. 
+        dSprite.DrawTheSprite(Content);
+
         // TODO: use this.Content to load your game content here
     }
 
@@ -70,23 +82,23 @@ public class Game1 : Game
 
         if (kState.IsKeyDown(Keys.Right))
         {
-            Console.WriteLine("key is pressed");
+            Console.WriteLine("right is pressed");
             alienPosition.X = alienPosition.X + 2.0f;
         }
 
         if (kState.IsKeyDown(Keys.Left))
         {
-            Console.WriteLine("key is pressed");
+            Console.WriteLine("left is pressed");
             alienPosition.X = alienPosition.X - 2.0f;
         }
         if (kState.IsKeyDown(Keys.Up))
         {
-            Console.WriteLine("key is pressed");
+            Console.WriteLine("up is pressed");
             alienPosition.Y = alienPosition.Y - 2.0f;
         }
         if (kState.IsKeyDown(Keys.Down))
         {
-            Console.WriteLine("key is pressed");
+            Console.WriteLine("down is pressed");
             alienPosition.Y = alienPosition.Y + 2.0f;
         }
 
@@ -95,11 +107,12 @@ public class Game1 : Game
 
         if (alienRect.Intersects(ufoRect))
         {
-            Console.WriteLine("Alien has hit the ufo");
+
+            Console.WriteLine("Alien has picked up the UFO");
+            ufoRect = Rectangle.Empty;
             collectedUfo = true;
             
         }
-
 
         // TODO: Add your update logic here
 
@@ -117,8 +130,11 @@ public class Game1 : Game
         if (collectedUfo == false)
         {
             _spriteBatch.Draw(ufoSprite, ufoPosition, Color.White);
+            
         }
-        _spriteBatch.DrawString(gameText, "Welcome to alien ufo game!", new Vector2(100, 100), Color.White);
+        _spriteBatch.DrawString(gameText, "Welcome to alien ufo game!", new Vector2(300, 0), Color.White);
+
+        dSprite.Draw(_spriteBatch);
 
         _spriteBatch.End();
 

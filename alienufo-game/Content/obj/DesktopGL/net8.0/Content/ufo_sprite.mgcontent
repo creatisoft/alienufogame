@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>/Users/christopher/Documents/GameProjects/alienufo-game/Content/ufo_sprite.png</SourceFile>
+  <SourceFile>/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/Content/ufo_sprite.png</SourceFile>
   <SourceTime>2025-09-07T12:48:18.3805995-07:00</SourceTime>
-  <DestFile>/Users/christopher/Documents/GameProjects/alienufo-game/Content/bin/DesktopGL/Content/ufo_sprite.xnb</DestFile>
-  <DestTime>2025-09-07T12:57:04.1087182-07:00</DestTime>
+  <DestFile>/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/Content/bin/DesktopGL/Content/ufo_sprite.xnb</DestFile>
+  <DestTime>2025-09-07T14:54:10.3828048-07:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2025-06-02T03:31:02-07:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
