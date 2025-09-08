@@ -34,10 +34,10 @@
 /Users/christopher/Documents/GameProjects/alienufo-game/obj/Debug/net8.0/ref/alienufo-game.dll
 /Users/christopher/Documents/GameProjects/alienufo-game/bin/Debug/net8.0/Content/myfont.xnb
 /Users/christopher/Documents/GameProjects/alienufo-game/bin/Debug/net8.0/Content/Arial.xnb
-/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Debug/net8.0/Content/Arial.xnb
-/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Debug/net8.0/Content/myfont.xnb
 /Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Debug/net8.0/Content/alien_sprite.xnb
+/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Debug/net8.0/Content/Arial.xnb
 /Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Debug/net8.0/Content/bush_sprite.xnb
+/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Debug/net8.0/Content/myfont.xnb
 /Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Debug/net8.0/Content/ufo_sprite.xnb
 /Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Debug/net8.0/alienufo-game
 /Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Debug/net8.0/alienufo-game.deps.json

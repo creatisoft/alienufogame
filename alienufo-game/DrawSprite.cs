@@ -22,12 +22,28 @@ public class DrawSprite
 
     }
 
+    public void Update(GameTime gameTime)
+    {
+        KeyboardState kState = Keyboard.GetState();
+        if (kState.IsKeyDown(Keys.K))
+        {
+            Console.WriteLine("right is pressed");
+            spriteTexturePosition.X = spriteTexturePosition.X + 2.0f;
+        }
+
+        if (kState.IsKeyDown(Keys.L))
+        {
+            Console.WriteLine("left is pressed");
+            spriteTexturePosition.X = spriteTexturePosition.X - 2.0f;
+        }   
+    }
+
 
     public void Draw(SpriteBatch spriteBatch)
     {
 
         spriteBatch.Draw(spriteTexture2D, spriteTexturePosition, Color.White);
- 
+
     }
 
     

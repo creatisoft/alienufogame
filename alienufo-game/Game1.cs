@@ -106,6 +106,8 @@ public class Game1 : Game
             alienPosition.Y = alienPosition.Y + 2.0f;
         }
 
+        dSprite.Update(gameTime);
+
 
         alienRect = new Rectangle((int)alienPosition.X, (int)alienPosition.Y, (int)alienSprite.Width, (int)alienSprite.Height);
 

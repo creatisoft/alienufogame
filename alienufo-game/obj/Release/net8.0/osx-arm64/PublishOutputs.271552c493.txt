@@ -1,0 +1,9 @@
+/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Release/net8.0/osx-arm64/publish/Content/alien_sprite.xnb
+/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Release/net8.0/osx-arm64/publish/Content/Arial.xnb
+/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Release/net8.0/osx-arm64/publish/Content/bush_sprite.xnb
+/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Release/net8.0/osx-arm64/publish/Content/myfont.xnb
+/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Release/net8.0/osx-arm64/publish/Content/ufo_sprite.xnb
+/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Release/net8.0/osx-arm64/publish/alienufo-game
+/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Release/net8.0/osx-arm64/publish/alienufo-game.pdb
+/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Release/net8.0/osx-arm64/publish/libopenal.dylib
+/Users/christopher/Documents/GameProjects/alienufogame/alienufo-game/bin/Release/net8.0/osx-arm64/publish/libSDL2-2.0.0.dylib
