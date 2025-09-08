@@ -28,8 +28,10 @@ public class Game1 : Game
     Rectangle ufoRect;
 
     SpriteFont gameText;
+    SpriteFont gameScoreText;
 
     public bool collectedUfo = false;
+    public int gamePoints = 0;
 
     public Game1()
     {
@@ -41,7 +43,7 @@ public class Game1 : Game
         //add title, and turn off resizing. 
         Window.Title = "Alien UFO Game by Christopher M.";
         Window.AllowUserResizing = false;
-        
+
     }
 
     protected override void Initialize()
@@ -68,6 +70,8 @@ public class Game1 : Game
         ufoRect = new Rectangle((int)ufoPosition.X, (int)ufoPosition.Y, (int)ufoSprite.Width, (int)ufoSprite.Height);
 
         gameText = Content.Load<SpriteFont>("myfont");
+        gameScoreText = Content.Load<SpriteFont>("myfont");
+
 
         //draw the dsprite
         //use content in the parameters. 
@@ -110,6 +114,7 @@ public class Game1 : Game
 
             Console.WriteLine("Alien has picked up the UFO");
             ufoRect = Rectangle.Empty;
+            gamePoints = gamePoints + 1;
             collectedUfo = true;
             
         }
@@ -133,6 +138,7 @@ public class Game1 : Game
             
         }
         _spriteBatch.DrawString(gameText, "Welcome to alien ufo game!", new Vector2(300, 0), Color.White);
+        _spriteBatch.DrawString(gameScoreText, $"Score: {gamePoints}", new Vector2(300, 18), Color.White);
 
         dSprite.Draw(_spriteBatch);
 
