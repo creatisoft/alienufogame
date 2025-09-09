@@ -12,8 +12,9 @@ public class DrawSprite
     public Texture2D spriteTexture2D;
     public Vector2 spriteTexturePosition = new Vector2(50, 50);
 
+    public Rectangle spriteRect;
     //Content Manager to load our textures
-    
+
 
     public void DrawTheSprite(ContentManager content)
     {
@@ -24,6 +25,9 @@ public class DrawSprite
 
     public void Update(GameTime gameTime)
     {
+
+        spriteRect = new Rectangle( (int)spriteTexturePosition.X, (int)spriteTexturePosition.Y, (int)spriteTexture2D.Width, (int)spriteTexture2D.Height ) ;
+
         KeyboardState kState = Keyboard.GetState();
         if (kState.IsKeyDown(Keys.K))
         {

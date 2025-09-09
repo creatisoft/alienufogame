@@ -121,6 +121,11 @@ public class Game1 : Game
             
         }
 
+        if (alienRect.Intersects(dSprite.spriteRect))
+        {
+            Console.WriteLine("Alien has hit the bush object");
+        }
+
         // TODO: Add your update logic here
 
         base.Update(gameTime);

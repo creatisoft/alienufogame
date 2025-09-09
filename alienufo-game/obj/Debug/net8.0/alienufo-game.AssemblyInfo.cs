@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("alienufo-game")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b36bfaaa0c022aa8daa70ed0e64547204512b9a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69133b305143e6e5bbd08622bfb2dad2777c8c24")]
 [assembly: System.Reflection.AssemblyProductAttribute("alienufo-game")]
 [assembly: System.Reflection.AssemblyTitleAttribute("alienufo-game")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
