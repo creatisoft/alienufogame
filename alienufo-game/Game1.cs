@@ -33,6 +33,8 @@ public class Game1 : Game
     public bool collectedUfo = false;
     public int gamePoints = 0;
 
+    Vector2 previousAlienLocation;
+
     public Game1()
     {
 
@@ -84,6 +86,10 @@ public class Game1 : Game
     {
         KeyboardState kState = Keyboard.GetState();
 
+        //took this from the monogame doc
+        //simple collision detection
+        previousAlienLocation = alienPosition;
+
         if (kState.IsKeyDown(Keys.Right))
         {
             Console.WriteLine("right is pressed");
@@ -124,6 +130,9 @@ public class Game1 : Game
         if (alienRect.Intersects(dSprite.spriteRect))
         {
             Console.WriteLine("Alien has hit the bush object");
+            //collision detection
+            alienPosition = previousAlienLocation;
+
         }
 
         // TODO: Add your update logic here
