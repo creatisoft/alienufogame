@@ -18,6 +18,10 @@ public class Game1 : Game
 
     //bush sprite test
     DrawSprite dSprite;
+    DrawSprite bush2;
+    DrawSprite bush3;
+
+
 
     Texture2D alienSprite;
     Texture2D ufoSprite;
@@ -58,6 +62,18 @@ public class Game1 : Game
         alienPosition = Vector2.Zero;
         ufoPosition = new Vector2(400, 250);
         dSprite = new DrawSprite();
+        bush2 = new DrawSprite();
+        bush3 = new DrawSprite();
+
+        bush2.spriteTexturePosition.X = 475;
+        bush2.spriteTexturePosition.Y = 210;
+
+        bush3.spriteTexturePosition.X = 325;
+        bush3.spriteTexturePosition.Y = 175;
+
+
+
+
         base.Initialize();
     }
 
@@ -78,6 +94,9 @@ public class Game1 : Game
         //draw the dsprite
         //use content in the parameters. 
         dSprite.DrawTheSprite(Content);
+        bush2.DrawTheSprite(Content);
+        bush3.DrawTheSprite(Content);
+
 
         // TODO: use this.Content to load your game content here
     }
@@ -113,6 +132,9 @@ public class Game1 : Game
         }
 
         dSprite.Update(gameTime);
+        bush2.Update(gameTime);
+        bush3.Update(gameTime);
+
 
 
         alienRect = new Rectangle((int)alienPosition.X, (int)alienPosition.Y, (int)alienSprite.Width, (int)alienSprite.Height);
@@ -127,7 +149,7 @@ public class Game1 : Game
             
         }
 
-        if (alienRect.Intersects(dSprite.spriteRect))
+        if (alienRect.Intersects(dSprite.spriteRect) || alienRect.Intersects(bush2.spriteRect) || alienRect.Intersects(bush3.spriteRect) )
         {
             Console.WriteLine("Alien has hit the bush object");
             //collision detection
@@ -157,6 +179,8 @@ public class Game1 : Game
         _spriteBatch.DrawString(gameScoreText, $"Score: {gamePoints}", new Vector2(300, 18), Color.White);
 
         dSprite.Draw(_spriteBatch);
+        bush2.Draw(_spriteBatch);
+        bush3.Draw(_spriteBatch);
 
         _spriteBatch.End();
 
